@@ -5,56 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project: Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 </head>
 <body>
-    <nav>
-        <div>Header Logo</div>
-        <ul>
-            <li>header link one</li>
-            <li>header link two</li>
-            <li>header link three</li>
-        </ul>
-    </nav>
-    <div class="hero-container">
-        <div class="hero-container-left">
-            <h1>This website is awesome</h1>
-            <p>This website has some subtext that goes here under the main title. It's a smaller font font and the color is lower contrast</p>
-            <button>Sign up</button>
+    <div class="wrapper">
+        <div class="top">
+            <nav>
+                <div>Header Logo</div>
+                    <ul>
+                        <li>
+                            <a href="#">header link one</a>
+                        </li>
+                        <li>
+                            <a href="#">header link two</a>
+                        </li>
+                        <li>
+                            <a href="#">header link three</a>
+                        </li>
+                    </ul>
+            </nav>
+            <div class="hero-container">
+                <div class="hero-container-left">
+                    <h1>This website is awesome</h1>
+                    <p class="subtext-hero">This website has some subtext that goes here under the main title. It's a smaller font font and the color is lower contrast</p>
+                    <button class="button-top">Sign up</button>
+                </div>
+                <div class="hero-container-right">
+                    <img src="img/programming-3170991_1280.png" alt="computer with html tag">
+                </div>
+            </div>
+        </div> 
+        <div class="information-container">
+            <h2>Some random information.</h2>
+            <div class="item-container">
+                <div class="item">
+                    <div class="image">
+                        <a href="https://www.flaticon.com/uicons">
+                            <i class="fi fi-brands-facebook"></i> 
+                        </a>
+                    </div>
+                    <p>
+                        <a href="https://www.flaticon.com/uicons">Uicons by Flaticon</a>
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <a href="https://www.flaticon.com/uicons">
+                            <i class="fi fi-brands-instagram"></i>
+                        </a>
+                    </div>
+                    <p>
+                        <a href="https://www.flaticon.com/uicons">Uicons by Flaticon</a>
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <a href="https://www.flaticon.com/uicons">
+                            <i class="fi fi-rr-envelope"></i>
+                        </a>
+                    </div>
+                    <p>
+                        <a href="https://www.flaticon.com/uicons">Uicons by Flaticon</a>
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <a href="https://www.flaticon.com/uicons">
+                            <i class="fi fi-rr-phone-call"></i>
+                        </a>
+                    </div>
+                    <p>
+                        <a href="https://www.flaticon.com/uicons">Uicons by Flaticon</a>
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="hero-container-right">
-            This is a placeholder for an image
+        <div class="quote-container">
+            <p class="quote">This an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+            <p class="quote-author">-Thor, God of Thunder</p> 
         </div>
-    </div>
-    <div class="information-container">
-        <h2>Some random information.</h2>
-        <div class="item">
-            <div class="image"></div>
-            <p>this is some subtext under an illustration or image</p>
+        <div class="sign-up-container">
+            <div class="sign-up-info">
+                <div class="sign-up-text">
+                    <h3>Call to action! It's time!</h3>
+                    <p>Sign up for our product by clicking that button right over there!</p>
+                </div>
+                <button>Sign up</button>
+            </div>
         </div>
-        <div class="item"></div>
-            <div class="image"></div>
-            <p>this is some subtext under an illustration or image</p>
-        </div>
-        <div class="item"></div>
-            <div class="image"></div>
-            <p>this is some subtext under an illustration or image</p>
-        </div>
-        <div class="item"></div>
-            <div class="image"></div>
-            <p>this is some subtext under an illustration or image</p>
-        </div>
-    </div>
-    <div class="quote-container">
-        <p>This an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-        <p>-Thor, God of Thunder</p> 
-    </div>
-    <div class="sign-up">
-        <h3>Call to action! It's time!</h3>
-        <p>Sign up for our product by clicking that button right over there!</p>
-        <button>Sign up</button>
     </div>
     <footer>
-        Copyright &copy; The Odin Project 2021 
+        Copyright &copy The Odin Project 2021
     </footer>
 </body>
 </html>

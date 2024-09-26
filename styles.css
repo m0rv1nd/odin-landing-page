@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial;
+    display: flex;
+    flex-direction: column;
+    /* this makes the footer move to the bottom of the page */
+    min-height: 100vh;
+}
+
+.wrapper {
+    flex: 1;
+}
+
+.top,
+footer {
+    background-color: #1F2937;
+}
+
+.top {
+    padding: 10px 10vw;
+    height: 28vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.subtext-hero, 
+ul li a {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+ul li a:link,
+ul li a:visited,
+ul li a:active {
+    color: #e5e7eb
+}
+
+ul li a:hover {
+    color: #cfd1d4;
+}
+
+nav div {
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: 700;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    height: 200px;
+}
+
+.hero-container-left {
+    flex: 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color:#f9faf8;
+}
+
+.hero-container-right {
+    flex: 1 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+img {
+    flex: 1;
+    height: 100%;
+}
+
+.button-top {
+    margin: 10px 0;
+    width: 100px;
+    padding: 5px 0;
+    background-color: hsl(216, 100%, 67%);
+    color:#f9faf8;
+    border: 1px solid hsl(216, 100%, 67%);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button-top:hover {
+    background-color: hsl(216, 64%, 60%);
+    border: 1px solid hsl(216, 64%, 60%);
+}
+
+.information-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 10vw;
+    height: 26vh;
+}
+
+.information-container h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    margin: 0 0 20px 0;
+}
+
+.item-container {
+    display: flex;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    border: 3px solid hsl(216, 100%, 67%);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.image i {
+    font-size: 50px;
+}
+
+.item a {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+}
+
+.item a:link,
+.item a:visited,
+.item a:active {
+    color: #1F2937;
+}
+
+.item a:hover {
+    color: rgb(73, 77, 83);
+}
+
+.item p
+{
+    margin: 10px 0;
+    text-align: center;
+    width: 150px;
+}
+
+.quote-container {
+    height: 22vh;
+    background: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10vw;
+}
+
+.quote-container .quote {
+    font-size: 36px;
+    text-align: justify;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.quote-author {
+    align-self: flex-end;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sign-up-container {
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10vw;
+}
+
+.sign-up-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-text h3 {
+    color: #f9faf8;
+}
+
+.sign-up-text p {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.sign-up-info {
+    background: hsl(216, 100%, 67%);
+    padding: 20px 40px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.sign-up-info button {
+    border-radius: 5px;
+    width: 100px;
+    padding: 5px 0;
+    font-weight: bold;
+    background: hsl(216, 100%, 67%);
+    color: #f9faf8;
+    border: 2px solid #f9faf8;
+}
+
+button:hover {
+    background: hsl(216, 64%, 60%);
+    color: #e5e7eb;
+    border: 2px solid #e5e7eb;
+}
+
+footer {
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+
+
+
+
+
+

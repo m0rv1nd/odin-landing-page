@@ -1,3 +1,6 @@
+/* To make the page have a certain horizontal dimension I could use padding instead of max-width declaration */
+/* In order for the page to scroll freely vertically, I could not declare the height rigidly, but use padding to define the dimension of a particular section */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
@@ -5,30 +8,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+     
 body {
-    font-family: Roboto, Arial;
-    display: flex;
-    flex-direction: column;
-    /* this makes the footer move to the bottom of the page */
-    min-height: 100vh;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
-.wrapper {
-    flex: 1;
-}
+/* HEADER */
 
-.top,
-footer {
+#header
+{
+    height: 28vh; 
     background-color: #1F2937;
+    padding: 10px 20px;
 }
 
-.top {
-    padding: 10px 10vw;
-    height: 28vh;
+/* HEADER */
+/* NAV */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-nav {
+nav.container,
+.container.hero {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -40,40 +42,38 @@ nav ul {
     gap: 20px
 }
 
-ul li a {
+nav ul li a {
     text-decoration: none;
 }
 
-.subtext-hero, 
-ul li a {
+.subtext, 
+nav ul li a:link,
+nav ul li a:visited,
+nav ul li a:active {
     font-size: 18px;
     color: #e5e7eb;
 }
 
-ul li a:link,
-ul li a:visited,
-ul li a:active {
-    color: #e5e7eb
-}
-
-ul li a:hover {
+nav ul li a:hover {
     color: #cfd1d4;
 }
 
-nav div {
+nav .logo {
     font-size: 24px;
     color: #f9faf8;
     font-weight: 700;
 }
 
-.hero-container {
-    display: flex;
-    justify-content: space-between;
+/* HEADER */
+/* HERO */
+
+.container.hero {
     gap: 50px;
     height: 200px;
+    margin-bottom: 0;
 }
 
-.hero-container-left {
+.left {
     flex: 1 50%;
     display: flex;
     flex-direction: column;
@@ -86,27 +86,29 @@ h1 {
     color:#f9faf8;
 }
 
-.hero-container-right {
+.right {
     flex: 1 50%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
 }
 
 img {
-    flex: 1;
-    height: 100%;
+    height: 75%;
+    width: auto;
+}
+
+button {
+    width: 100px;
+    padding: 5px 0;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 .button-top {
-    margin: 10px 0;
-    width: 100px;
-    padding: 5px 0;
     background-color: hsl(216, 100%, 67%);
     color:#f9faf8;
     border: 1px solid hsl(216, 100%, 67%);
-    border-radius: 5px;
-    font-weight: bold;
+    margin: 10px 0;
 }
 
 .button-top:hover {
@@ -114,16 +116,24 @@ img {
     border: 1px solid hsl(216, 64%, 60%);
 }
 
-.information-container {
+/* MAIN */
+
+#main {
+     height: 66vh; 
+}
+
+/* MAIN */
+/* INFO */
+
+.container.info {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 10px 10vw;
-    height: 26vh;
+    margin: 0 auto;
 }
 
-.information-container h2 {
+.container.info h2 {
     font-size: 36px;
     font-weight: 900;
     color: #1f2937;
@@ -179,16 +189,24 @@ img {
     width: 150px;
 }
 
-.quote-container {
+/* MAIN */
+/* QUOTE */
+
+.wrapper {
     height: 22vh;
     background: #e5e7eb;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .container  {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px 10vw;
 }
 
-.quote-container .quote {
+.quote {
     font-size: 36px;
     text-align: justify;
     font-weight: lighter;
@@ -201,12 +219,15 @@ img {
     font-weight: bold;
 }
 
-.sign-up-container {
+/* MAIN */
+/* SIGN-UP */
+
+.container.sign-up {
     height: 18vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 10vw;
+    padding: 0 20px;
 }
 
 .sign-up-text {
@@ -232,29 +253,29 @@ img {
     gap: 100px;
 }
 
-.sign-up-info button {
-    border-radius: 5px;
-    width: 100px;
-    padding: 5px 0;
-    font-weight: bold;
+.button-down {
     background: hsl(216, 100%, 67%);
     color: #f9faf8;
     border: 2px solid #f9faf8;
 }
 
-button:hover {
+.button-down:hover {
     background: hsl(216, 64%, 60%);
     color: #e5e7eb;
     border: 2px solid #e5e7eb;
 }
 
-footer {
+/* FOOTER */
+
+#footer {
     height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #e5e7eb;
     font-size: 18px;
+    background-color: #1F2937;
+    padding: 0 20px;
 }
 
 
